@@ -16,8 +16,9 @@ server.on('connection', function () {
     console.log('Client is connected');
 });
 
-server.on('close',function(){
+server.on('close', function () {
     console.log('Server is closed');
 });
 
-console.log('Node Server started on prot 3000');
+console.log('Node Server started on port 3000');
+
