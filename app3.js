@@ -1,10 +1,9 @@
 const http = require('http')
 const httpServer = http.createServer((request, response) => {
-    let data = ''
+
     // 监听 data 事件，当请求传送数据过来时
     request.on('data', (chunk) => {
-        console.log(chunk);
-        data += chunk
+        console.log(`${chunk}`);
     })
 
     // 监听 end 事件，当请求结束时
